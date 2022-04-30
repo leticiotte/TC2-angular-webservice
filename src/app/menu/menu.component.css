@@ -1,0 +1,22 @@
+#menu {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  display: inline-block;
+  padding: 10px;
+}
+
+li a{
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #4D6A6D;
+  color: white;
+}
+

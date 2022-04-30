@@ -1,0 +1,38 @@
+table {
+  font-family: arial, sans-serif;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  border-collapse: collapse;
+  border-radius: 18px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #a9a6a6;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.margin{
+  margin-left: 20px;
+}
+
+.details{
+  background-color: rgb(172, 241, 172);
+}
+
+.edit{
+  background-color: rgb(245, 226, 156);
+}
+
+.delete{
+  background-color: rgb(249, 144, 144);
+}
