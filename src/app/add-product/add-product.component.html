@@ -8,42 +8,43 @@
         type="text/css"
       />
 
-      <div _ngcontent-xdb-c9="" class="field flex">
-        <label _ngcontent-xdb-c9="" class="label">Nome</label>
+      <div  class="field flex">
+        <label  class="label">Nome</label>
         <input
           name="name"
           id="name"
-          _ngcontent-xdb-c9=""
+          [(ngModel)] = "product.title"
           type="text"
           placeholder="Nome do produto"
-          class="input ng-pristine ng-valid ng-touched"
+          class="input"
         />
       </div>
-      <div _ngcontent-xdb-c9="" class="field  flex">
-        <label _ngcontent-xdb-c9="" class="label">Descrição</label>
+      <div  class="field  flex">
+        <label class="label">Descrição</label>
         <input
           name="birthDate"
           id="birthDate"
-          _ngcontent-xdb-c9=""
+          [(ngModel)] = "product.description"
           type="text"
           placeholder="Descrição do produto"
-          class="input ng-pristine ng-valid ng-touched"
+          class="input"
         />
       </div>
-      <div _ngcontent-xdb-c9="" class="field  flex">
-        <label _ngcontent-xdb-c9="" class="label">Preço</label>
+      <div  class="field  flex">
+        <label  class="label">Preço</label>
           <input
             name="photo"
             id="photo"
-            _ngcontent-xdb-c9=""
+            [(ngModel)] = "product.price"
             type="number"
             placeholder="Preço do produto"
-            class="input ng-pristine ng-valid ng-touched"
+            class="input"
+            step="any"
           />
 
       </div>
-      <div _ngcontent-xdb-c9="" class="field">
-        <input class="horizontalgap" name="submit" id="submit" type="submit" value="Cadastrar" />
+      <div  class="field">
+        <input (click)="add()" horizontalgap name="submit" id="submit" type="submit" value="Cadastrar" />
       </div>
 
     </form>

@@ -19,6 +19,10 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { AddProductComponent } from './add-product/add-product.component';
 import { ListAllProductsComponent } from './list-all-products/list-all-products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 
 @NgModule({
@@ -40,7 +44,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     MatButtonModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
