@@ -1,1 +1,52 @@
-<p>edit-product works!</p>
+<div *ngIf="product !==  undefined && product !==  null" class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+  <div id="principal">
+    <form ngNativeValidate>
+      <h2>Editar produto</h2>
+      <div  class="field flex">
+        <label  class="label">Nome</label>
+        <input
+          name="name"
+          id="name"
+          [(ngModel)] = "product.title"
+          type="text"
+          placeholder="Nome do produto"
+          class="input"
+        />
+      </div>
+      <div  class="field  flex">
+        <label class="label">Descrição</label>
+        <input
+          name="birthDate"
+          id="birthDate"
+          [(ngModel)] = "product.description"
+          type="text"
+          placeholder="Descrição do produto"
+          class="input"
+        />
+      </div>
+      <div  class="field  flex">
+        <label  class="label">Preço</label>
+          <input
+            name="photo"
+            id="photo"
+            [(ngModel)] = "product.price"
+            type="number"
+            placeholder="Preço do produto"
+            class="input"
+            step="any"
+          />
+
+      </div>
+      <div  class="field">
+        <input (click)="edit()" horizontalgap name="submit" id="submit" type="submit" value="Editar" />
+      </div>
+
+    </form>
+  </div>
+</div>
+<div *ngIf="this.error == false && product === undefined">
+  <app-spinner></app-spinner>
+</div>
+<div *ngIf="this.error == true  && product === undefined">
+  <h2>Produto não encontrado!</h2>
+</div>

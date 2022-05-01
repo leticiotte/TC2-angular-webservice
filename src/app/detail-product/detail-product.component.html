@@ -1,1 +1,16 @@
-<p>detail-product works!</p>
+<div *ngIf="product !== undefined" class="content">
+  <div id="principal">
+    <h2>● Produto ●</h2>
+    <div id="productDetails">
+      <p><strong>Nome:</strong> {{ product.title }}</p>
+      <p><strong>Descrição:</strong> {{ product.description }}</p>
+      <p><strong>Price:</strong> R${{ this.priceFormatted }}</p>
+    </div>
+  </div>
+</div>
+<div *ngIf="this.error == false && product === undefined">
+  <app-spinner></app-spinner>
+</div>
+<div *ngIf="this.error == true  && product === undefined">
+  <h2>Produto não encontrado!</h2>
+</div>

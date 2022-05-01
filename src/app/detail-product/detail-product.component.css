@@ -1,0 +1,22 @@
+#principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#productDetails{
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+h2{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+p{
+  font-size: 18px;
+}

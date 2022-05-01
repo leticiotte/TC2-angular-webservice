@@ -10,12 +10,13 @@
       <td class="has-text-centered">{{p.title}}</td>
       <td class="has-text-centered">
         <div class="buttons is-centered">
-          <button mat-raised-button class="details" id="{{p._id}}">Ver produto</button
-          ><button mat-raised-button class="margin edit" id="{{p._id}}">Editar</button
+          <button mat-raised-button class="details" id="{{p._id}}" routerLink="/detail/{{p._id}}"> Ver produto</button
+          ><button mat-raised-button class="margin edit" id="{{p._id}}" routerLink="/edit/{{p._id}}">Editar</button
           ><button
             mat-raised-button
             class="button is-danger margin delete"
             id="{{p._id}}"
+            (click)="deleteProduct(p._id, p.title)"
           >
             Deletar
           </button>

@@ -21,6 +21,7 @@ import { ListAllProductsComponent } from './list-all-products/list-all-products.
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 
@@ -34,7 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DeleteProductComponent,
     DetailProductComponent,
     AddProductComponent,
-    ListAllProductsComponent
+    ListAllProductsComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
