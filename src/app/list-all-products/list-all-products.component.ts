@@ -38,7 +38,6 @@ export class ListAllProductsComponent implements OnInit {
         }
       }
     }
-
   }
 
   ngOnInit(): void {

@@ -3,7 +3,6 @@ import { ListAllProductsComponent } from './list-all-products/list-all-products.
 import { AddProductComponent } from './add-product/add-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
-import { DeleteProductComponent } from './delete-product/delete-product.component';
 import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
 { path: "list", component: ListAllProductsComponent },
